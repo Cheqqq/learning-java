@@ -1,0 +1,42 @@
+//java util scanner for user input
+
+import java.util.Scanner;
+
+public class Clase {
+
+	public static void main(String[] args) {
+		
+		//create scanner object
+		
+		Scanner sc = new Scanner(System.in);
+		
+		//create integer n where the input gonna be stored
+		
+		int n;
+		
+		//ask for input and save
+		
+		System.out.println("How many Fibonacci's do yo want to print? ");
+		n = sc.nextInt();
+		
+		//fibonacci 
+		
+		int n1 = 0;
+		int n2 = 1;
+		
+		System.out.println(n1);
+		System.out.println(n2);
+		
+		for (int i = 0; i < (n-2); i++) {
+			
+		int n3 = n2 + n1;
+		System.out.println(n3);
+	    
+		n1 = n2;
+		n2 = n3;
+		
+		}
+		
+	}
+	
+}
